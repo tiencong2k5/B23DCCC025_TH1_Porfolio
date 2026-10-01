@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0d9488">
+    <title>Nguyễn Minh - Lập trình viên Front-End</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="#about" class="brand"><i class="fa-solid fa-code" aria-hidden="true"></i><span>N.Minh</span></a>
+            <nav class="desktop-nav" aria-label="Điều hướng chính">
+                <a href="#about">Giới thiệu</a>
+                <a href="#skills">Kỹ năng</a> 
+                <a href="#projects">Dự án</a>
+                <a href="#contact">Liên hệ</a>
+                <button id="theme-toggle" class="icon-button theme-toggle" type="button" aria-label="Đổi giao diện"><i id="theme-icon" class="fa-solid fa-moon" aria-hidden="true"></i></button>
+            </nav>
+            <div class="mobile-controls">
+                <button id="theme-toggle-mobile" class="icon-button theme-toggle" type="button" aria-label="Đổi giao diện"><i id="theme-icon-mobile" class="fa-solid fa-moon" aria-hidden="true"></i></button>
+                <button id="mobile-menu-button" class="icon-button menu-toggle" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="mobile-menu"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+            </div>
+        </div>
+        <nav id="mobile-menu" class="mobile-menu" aria-label="Điều hướng di động">
+            <a href="#about">Giới thiệu</a>
+            <a href="#skills">Kỹ năng</a>
+            <a href="#projects">Dự án</a>
+            <a href="#contact">Liên hệ</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="hero section-anchor">
+            <div class="container hero-content">
+                <div class="hero-copy">
+                    <p class="eyebrow">Xin chào! Tôi là</p>
+                    <h1>Nguyễn Minh</h1>
+                    <h2>Lập Trình Viên Front-End</h2>
+                    <p class="hero-description">Tôi là một lập trình viên tâm huyết với việc tạo ra các trải nghiệm người dùng tuyệt vời trên nền tảng web. Tôi đam mê học hỏi công nghệ mới, thiết kế giao diện tương tác và viết code sạch, dễ bảo trì.</p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="button button-primary">Xem Dự Án</a>
+                        <a href="#contact" class="button button-outline">Liên Hệ Ngay</a>
+                    </div>
+                </div>
+                <div class="hero-portrait">
+                    <div class="portrait-glow" aria-hidden="true"></div>
+                    <img src="https://ui-avatars.com/api/?name=Nguyen+Minh&background=0d9488&color=fff&size=512" alt="Ảnh đại diện Nguyễn Minh">
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section section-light section-anchor">
+            <div class="container">
+                <div class="section-heading"><h2>Kỹ Năng Chuyên Môn</h2><span aria-hidden="true"></span></div>
+                <div class="skills-grid">
+                    <article class="skill-item"><div class="skill-heading"><div class="skill-name"><i class="fa-brands fa-html5 skill-icon icon-html" aria-hidden="true"></i><span>HTML5</span></div><span class="skill-value">95%</span></div><div class="skill-track"><span class="skill-progress icon-html" style="--progress:95%"></span></div></article>
+                    <article class="skill-item"><div class="skill-heading"><div class="skill-name"><i class="fa-brands fa-css3-alt skill-icon icon-css" aria-hidden="true"></i><span>CSS3 / Tailwind</span></div><span class="skill-value">90%</span></div><div class="skill-track"><span class="skill-progress icon-css" style="--progress:90%"></span></div></article>
+                    <article class="skill-item"><div class="skill-heading"><div class="skill-name"><i class="fa-brands fa-js skill-icon icon-js" aria-hidden="true"></i><span>JavaScript (ES6+)</span></div><span class="skill-value">85%</span></div><div class="skill-track"><span class="skill-progress icon-js" style="--progress:85%"></span></div></article>
+                    <article class="skill-item"><div class="skill-heading"><div class="skill-name"><i class="fa-brands fa-react skill-icon icon-react" aria-hidden="true"></i><span>ReactJS</span></div><span class="skill-value">80%</span></div><div class="skill-track"><span class="skill-progress icon-react" style="--progress:80%"></span></div></article>
+                    <article class="skill-item"><div class="skill-heading"><div class="skill-name"><i class="fa-brands fa-node-js skill-icon icon-node" aria-hidden="true"></i><span>Node.js (Cơ bản)</span></div><span class="skill-value">65%</span></div><div class="skill-track"><span class="skill-progress icon-node" style="--progress:65%"></span></div></article>
+                    <article class="skill-item"><div class="skill-heading"><div class="skill-name"><i class="fa-brands fa-git-alt skill-icon icon-git" aria-hidden="true"></i><span>Git &amp; GitHub</span></div><span class="skill-value">85%</span></div><div class="skill-track"><span class="skill-progress icon-git" style="--progress:85%"></span></div></article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section section-muted section-anchor">
+            <div class="container">
+                <div class="section-heading"><h2>Dự Án Tiêu Biểu</h2><span aria-hidden="true"></span></div>
+                <div class="project-filters" id="filter-buttons" role="group" aria-label="Lọc dự án">
+                    <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">Tất cả</button>
+                    <button class="filter-button" type="button" data-filter="react" aria-pressed="false">React</button>
+                    <button class="filter-button" type="button" data-filter="js" aria-pressed="false">JavaScript</button>
+                    <button class="filter-button" type="button" data-filter="node" aria-pressed="false">Node.js</button>
+                </div>
+                <div class="projects-grid" id="projects-container">
+                    <article class="project-card" data-category="react node">
+                        <img src="https://placehold.co/600x400/0d9488/FFF?text=E-commerce+App" alt="Giao diện ShopMinh E-Commerce" class="project-image">
+                        <div class="project-content"><h3>ShopMinh - E-Commerce</h3><p class="project-description">Ứng dụng thương mại điện tử đầy đủ tính năng: giỏ hàng, thanh toán, quản lý tài khoản người dùng và giao diện admin.</p><div class="tag-list"><span>React</span><span>Node.js</span><span>MongoDB</span></div><div class="project-actions"><a href="#" class="button button-small button-primary">Demo</a><a href="#" class="button button-small button-dark"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a></div></div>
+                    </article>
+                    <article class="project-card" data-category="js">
+                        <img src="https://placehold.co/600x400/e65100/FFF?text=Foody+App" alt="Giao diện Foody Web App" class="project-image">
+                        <div class="project-content"><h3>Foody Web App</h3><p class="project-description">Ứng dụng đặt đồ ăn trực tuyến với giao diện responsive, lấy dữ liệu từ API và cho phép tìm kiếm món ăn nhanh chóng.</p><div class="tag-list"><span>HTML/CSS</span><span>Vanilla JS</span><span>API</span></div><div class="project-actions"><a href="#" class="button button-small button-primary">Demo</a><a href="#" class="button button-small button-dark"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a></div></div>
+                    </article>
+                    <article class="project-card" data-category="react">
+                        <img src="https://placehold.co/600x400/1e3a8a/FFF?text=Personal+Portfolio" alt="Giao diện Portfolio Cá Nhân" class="project-image">
+                        <div class="project-content"><h3>Portfolio Cá Nhân</h3><p class="project-description">Trang web giới thiệu bản thân được xây dựng bằng React và Tailwind CSS. Tối ưu hóa SEO và hiệu suất.</p><div class="tag-list"><span>React</span><span>Tailwind CSS</span></div><div class="project-actions"><a href="#" class="button button-small button-primary">Demo</a><a href="#" class="button button-small button-dark"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a></div></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section section-light section-anchor">
+            <div class="container contact-container">
+                <div class="section-heading"><h2>Liên Hệ Với Mình</h2><span aria-hidden="true"></span><p>Có dự án cần hợp tác? Hãy gửi tin nhắn cho mình nhé.</p></div>
+                <div class="contact-panel">
+                    <div class="contact-details">
+                        <div class="contact-item"><div class="contact-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div><div><h3>Email</h3><p>nguyenminh.dev@example.com</p></div></div>
+                        <div class="contact-item"><div class="contact-icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></div><div><h3>Điện thoại</h3><p>033 645 7375</p></div></div>
+                        <div class="contact-item"><div class="contact-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div><div><h3>Địa chỉ</h3><p>Hà Nội, Việt Nam</p></div></div>
+                    </div>
+                    <form id="contact-form" class="contact-form" novalidate>
+                        <div id="form-message" class="form-message is-hidden" role="status" aria-live="polite"></div>
+                        <div class="form-field"><label for="name">Tên của bạn</label><input type="text" id="name" name="name" autocomplete="name" aria-describedby="name-error"><p id="name-error" class="field-error is-hidden">Vui lòng nhập tên.</p></div>
+                        <div class="form-field"><label for="email">Email</label><input type="email" id="email" name="email" autocomplete="email" aria-describedby="email-error"><p id="email-error" class="field-error is-hidden">Vui lòng nhập email hợp lệ.</p></div>
+                        <div class="form-field"><label for="message">Nội dung</label><textarea id="message" name="message" rows="4" maxlength="500" aria-describedby="message-error char-count"></textarea><div class="field-meta"><p id="message-error" class="field-error is-hidden">Vui lòng nhập nội dung.</p><p id="char-count" class="char-count">0/500 ký tự</p></div></div>
+                        <button type="submit" class="button button-primary submit-button">Gửi Tin Nhắn <i class="fa-solid fa-paper-plane" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content"><p>© <span id="current-year"></span> Nguyễn Minh. All rights reserved.</p><div class="social-links"><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a><a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a><a href="#" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a></div></div>
+    </footer>
+</body>
+</html>
